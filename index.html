@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leela Phani Chandu Portfolio</title>
+    <title>Chandu Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,7 +22,7 @@
 
         body {
             background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            color: #fff;
+            color: #ffffff;
             padding-top: 80px;
         }
 
@@ -111,6 +111,10 @@
                 border-radius: 10px;
             }
 
+            .mobile-hide {
+                display: none !important;
+            }
+
             .nav-links.active {
                 display: flex;
             }
@@ -130,6 +134,7 @@
             header h1 {
                 font-size: 1.8rem !important;
             }
+
         }
 
         header {
@@ -258,7 +263,6 @@
         }
 
         .floating-button:hover {
-            /* background-color: #18aeae; */
             color: #10e3e3;
         }
 
@@ -277,227 +281,279 @@
             color: #0fccce;
             text-decoration: none;
         }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+
+            .yes-print {
+                display: block !important;
+            }
+
+            body {
+                padding-top: 0 !important;
+                background: #fff !important;
+                color: #000 !important;
+            }
+
+            .section {
+                box-shadow: none !important;
+                margin: 2rem 0 !important;
+            }
+
+            h1 {
+                color: #0fccce !important;
+            }
+
+            h2 {
+                color: #0fccce !important;
+            }
+
+            h3 {
+                color: #0fccce !important;
+            }
+
+            p,
+            li,
+            a,
+            header p,
+            header a,
+            section a,
+            footer a {
+                color: #000 !important;
+            }
+
+            .section {
+                padding: 0.5rem !important;
+                margin: 0.5rem !important;
+
+            }
+
+            .skill-section {
+                text-align: start !important;
+            }
+
+            .headerBackground {
+                padding-top: 30px !important;
+                padding-bottom: 30px !important;
+                background: #078686 !important;
+                color: #fff !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                border-radius: 5px;
+            }
+
+            .headerBackground h1,
+            .headerBackground h3,
+            .headerBackground p,
+            .headerBackground a {
+                color: #fff !important;
+                font-weight: 600;
+            }
+
+            .print-break {
+                display: block !important;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="progress-bar"></div>
-    <nav>
-        <h1 onclick="scrollToTop()">Leela Phani Chandu Bathula</h1>
+    <div class="progress-bar no-print"></div>
+    <nav id="head-nav" class="no-print">
+        <h1 onclick="scrollToTop()">BATHULA LEELA PHANI CHANDU</h1>
         <div class="menu-toggle" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
+
         <div class="nav-links" id="navLinks">
             <a href="#summary">Summary</a>
-            <a href="#career">Career</a>
+            <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
-            <!-- <a href="#projects">Projects</a> -->
             <a href="#education">Education</a>
             <a href="#certifications">Certifications</a>
-            <!-- <a href="#resume-download">Download</a> -->
-            <!-- <a href="#contact">Contact</a> -->
         </div>
     </nav>
     <header>
-        <div>
+        <div class="no-print">
+            <!-- <img src="https://placehold.co/120x120/0fccce/111?text=BC" alt="Profile Picture" /> -->
             <img src="chandu passport photo.jpg" alt="Profile Picture" />
         </div>
-        <div style="text-align: center;">
-                <h1>Leela Phani Chandu Bathula</h1>
+        <div class="headerBackground">
+            <div style="text-align: center;">
+                <h1>BATHULA LEELA PHANI CHANDU</h1>
+                <p>MCA Student at Sir C.R. Reddy College</p>
             </div>
-        <div>
-            
-            <div>
+            <div class="yes-print" style="display: none;">
+                <span><a target="_blank" href="https://www.linkedin.com/in/bathula-leela-phani-chandu-788351276/"
+                        style="color:#0fccce; margin-left: 12px;"><i class="fa-brands fa-linkedin"
+                            style="color: #0fccce; font-size: 40px; margin-left: 70px;"></i>
+                    </a></span><br/>
+                <p style="font-size: 10px;">
+                    (https://www.linkedin.com/in/<br/>bathula-leela-phani-chandu-788351276/)
+                </p>
+            </div>
+
+            <div class="no-print mobile-hide">
                 <p><i class="fas fa-envelope" style="color: #0fccce; margin-right: 8px;"></i><a target="_blank"
-                        href="mailto:phanichandu063@gmail.com" style="color:#0fccce">phanichandu063@gmail.com</a></p><br>
+                        href="mailto:phanichandu063@gmail.com" style="color:#0fccce">phanichandu063@gmail.com</a></p>
+                <br>
                 <p><i class="fas fa-phone" style="color: #0fccce; margin-right: 8px;"></i><a href="tel:+919121856701"
                         style="color:#0fccce">+91 9121856701</a></p><br>
-                <p><i class="fas fa-map-marker-alt" style="color: #0fccce; margin-right: 8px;"></i>Eluru, India</p>
+                <p><i class="fas fa-map-marker-alt" style="color: #0fccce; margin-right: 8px;"></i>Eluru, A.P. India</p>
+            </div>
+
+            <div class="yes-print" style="display: none;">
+                <p>
+                    <span><i class="fas fa-envelope" style="color: #0fccce; margin-right: 10px;"></i><a target="_blank"
+                            href="mailto:phanichandu063@gmail.com"
+                            style="color:#0fccce; margin-right: 10px;">phanichandu063@gmail.com
+                        </a></span>
+                    <span><i class="fas fa-phone" style="color: #0fccce; margin-right: 8px;"></i><a
+                            href="tel:+919121856701" style="color:#0fccce; margin-right: 10px;">+91 9121856701
+                        </a></span>
+                    <span><i class="fas fa-map-marker-alt" style="color: #0fccce; margin-right: 8px;"></i>Eluru, A.P.
+                        India</span>
+                </p>
             </div>
         </div>
     </header>
 
-    <div id="greeting"
+    <div id="greeting" class="no-print"
         style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; padding: 20px; border-radius: 10px; text-align: center; z-index: 1000; opacity: 1; transition: opacity 1s;">
     </div>
-    <div id="overlay"
+    <div id="overlay" class="no-print"
         style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 999; opacity: 1; transition: opacity 2s;">
     </div>
 
     <section class="section" id="summary" data-aos="fade-up">
         <h2>PROFESSIONAL SUMMARY</h2>
-        <p>Dynamic and technically skilled CRM Developer with 3 years of professional experience in Microsoft Dynamics
-            365 CRM, adept at handling complex client-side scripting scenarios. Proven expertise in developing and
-            deploying custom Plugins using C# to enhance Dynamics CRM capabilities and integrate with external
-            systems.<br /><br />
-
-            Experienced in the Power Platform suite—including Power Apps, Power Automate, and Business Rules—with
-            hands-on involvement in designing and optimizing system workflows in D365. Skilled in core CRM
-            customizations such as form tailoring, ribbon customization, site map configuration, and JavaScript library
-            integrations for enhanced client-side functionality.<br /><br />
-
-            Proficient in utilizing tools like XRM Toolbox and Ribbon Workbench for advanced UI customization, command
-            bar enhancements, and CRM administration tasks. In addition to CRM work, experienced in developing custom
-            webpages using HTML, CSS, and JavaScript to support tailored UI/UX requirements or extend CRM capabilities
-            beyond out-of-the-box functionality.<br /><br />
-
-            Well-versed in Agile methodologies, with practical experience using Azure Boards for tracking user stories,
-            managing sprint progress, bug fixing, and maintaining comprehensive project documentation.</p>
-    </section>
-
-    <section class="section" id="career" data-aos="fade-up">
-        <h2>CARRER SUMMARY</h2>
-        <h3>MICROSOFT DYNAMICS CRM ANALYST - Accenture (Sep 2024 – Present)</h3>
-        <ul>
-            <li>Actively involved in the design, development, and enhancement of Dynamics 365 CRM solutions for
-                enterprise clients in the banking domain.</li>
-            <li>Developed and deployed custom Plugins in C# to automate business processes and integrate with external
-                systems.</li>
-            <li>Implemented complex ribbon customizations and command bar logic using Ribbon Workbench.</li>
-            <li>Designed custom web resources using HTML, CSS, and JavaScript for enhanced UI/UX and business-specific
-                requirements.</li>
-            <li>Created and maintained business rules, Power Automate flows, and JavaScript libraries for dynamic form
-                behaviours and validations.</li>
-            <li>Project: Bank Project</li>
-            <li>Environment: Dynamics 365 CRM, Power Apps, Power Automate, Plugins (C#), JavaScript, HTML, CSS,
-                XRMToolBox, Ribbon Workbench</li>
-            <li>Team Size: 18 </li>
-        </ul>
-        <br />
-        <h3>MICROSOFT DYNAMICS CRM DEVELOPER - Infosys (Nov 2021 – Sep 2024)</h3>
-        <ul>
-            <li>Developed and customized Dynamics 365 CRM solutions, including Plugins, custom JavaScript functions, and
-                form/ribbon customizations.</li>
-            <li>Utilized Ribbon Workbench for advanced UI modifications and conditional command visibility based on user
-                roles.</li>
-            <li>Managed workflow automations, Power Apps, and form scripting to ensure system efficiency and business
-                logic execution.</li>
-            <li>Followed Agile practices with Azure DevOps for sprint planning, bug tracking, and user story management.
-            </li>
-            <li>Used XRMToolBox for metadata documentation, bulk updates, and component migration.</li>
-            <li>Project: Siemens LDA</li>
-            <li>Environment: Dynamics 365 CRM, Power Apps, Power Automate, Plugins (C#), JavaScript, HTML, CSS,
-                XRMToolBox, Ribbon Workbench</li>
-            <li>Team Size: 11</li>
-        </ul>
-    </section>
-
-    <section class="section" id="skills" data-aos="fade-up">
-        <h2>SKILLS</h2>
-        <ul>
-            <li>Microsoft Dynamics 365 CRM</li>
-            <li>Power Apps & Power Automate</li>
-            <li>Plugins (C#)</li>
-            <li>JavaScript</li>
-            <li>Business Rules and Workflows</li>
-            <li>Custom Webpages(Html, Css & JavaScript)</li>
-            <li>XRMToolBox, Ribbon Workbench</li>
-            <li>Azure DevOps, Agile</li>
-            <li>Bug fixing and debugging</li>
-            <li>Project documentation</li>
-            <li>CRM customization </li>
-            <li>Team collaboration and communication </li>
-        </ul>
-    </section>
-
-    <!-- <section class="section" id="projects" data-aos="fade-up">
-        <h2>PROJECTS</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-            <div
-                style="background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-                <img src="https://" alt="Project 1"
-                    style="width: 100%; height: 200px; object-fit: cover;">
-                <div style="padding: 1rem;">
-                    <h3 style="margin-bottom: 0.5rem; color: #0fccce;">Project Title 1</h3>
-                    <p style="font-size: 0.95rem;">description about the project</p>
-                </div>
-            </div>
-            <div
-                style="background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-                <img src="https://via.placeholder.com/400x200" alt="Project 2"
-                    style="width: 100%; height: 200px; object-fit: cover;">
-                <div style="padding: 1rem;">
-                    <h3 style="margin-bottom: 0.5rem; color: #0fccce;">Project Title 2</h3>
-                    <p style="font-size: 0.95rem;">description about the project</p>
-                </div>
-            </div>
-            <div
-                style="background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-                <img src="" alt="Project 3"
-                    style="width: 100%; height: 200px; object-fit: cover;">
-                <div style="padding: 1rem;">
-                    <h3 style="margin-bottom: 0.5rem; color: #0fccce;">Project Title 3</h3>
-                    <p style="font-size: 0.95rem;">description about the project</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="section" id="education" data-aos="fade-up">
-        <h2>EDUCATION</h2>
-        <p><strong>B.Tech in Electrical & Electronics</strong><br><a target="_blank"
-                href="https://www.linkedin.com/school/raghu-engineering-college">Raghu Engineering College</a>, Jun 2021
+        <p>Motivated and detail-oriented MCA student with strong foundations in software
+            development, data science, cybersecurity, and cloud technologies. Skilled in
+            building and deploying machine learning models, web applications, and cloud
+            migration projects. Experienced in Python, SQL, AWS, and cybersecurity
+            fundamentals with proven ability to lead teams and deliver impactful solutions.
+            Seeking an entry-level role where I can apply my technical expertise and contribute
+            to innovative IT projects.
         </p>
     </section>
 
-    <section class="section" id="certifications" data-aos="fade-up">
-        <h2>CERTIFICATIONS</h2>
+    <section class="section" id="experience" data-aos="fade-up">
+        <h2>INTERNSHIP EXPERIENCE</h2>
+        <h4>Cybersecurity Intern - Palo Alto Cybersecurity Academy (10 Weeks)</h4>
         <ul>
-            <li><a href="https://learn.microsoft.com/api/credentials/share/en-gb/SaiNikhilBattula/F816735F0407A9A8?sharingId=F86E09FFD72D1191"
-                    onclick="openPopup(this.href); return false;">PL-900 : Microsoft Certified Power Platform
-                    Fundamentals</a></li>
-
-            <li><a href="https://learn.microsoft.com/api/credentials/share/en-gb/SaiNikhilBattula/F1156641512640AC?sharingId=F86E09FFD72D1191"
-                    onclick="openPopup(this.href); return false;">MB-910 : Microsoft Certified Dynamics 365 Fundamentals
-                    (CRM)</a></li>
-
-            <li><a href="https://learn.microsoft.com/api/credentials/share/en-gb/SaiNikhilBattula/32DF5876C89F5166?sharingId=F86E09FFD72D1191"
-                    onclick="openPopup(this.href); return false;">MB-230 : Microsoft Dynamics 365 Customer Service
-                    Functional Consultant</a></li>
-
-            <li><a href="https://learn.microsoft.com/api/credentials/share/en-gb/SaiNikhilBattula/2A507ED806E76682?sharingId=F86E09FFD72D1191"
-                    onclick="openPopup(this.href); return false;">AI-900 : Microsoft Certified AI Fundamentals</a></li>
-
-            <li><a href="https://learn.microsoft.com/api/credentials/share/en-gb/SaiNikhilBattula/45F802974EE67FCE?sharingId=F86E09FFD72D1191"
-                    onclick="openPopup(this.href); return false;">AI-102 : Microsoft Certified Azure AI Engineer
-                    Associate</a></li>
+            <li>Assisted in incident response activities and remediation of security vulnerabilities.</li>
+            <li>Contributed to security policies and procedures development.</li>
+            <li>Gained practical knowledge in ethical hacking and cybersecurity fundamentals.</li>
         </ul>
     </section>
 
-    <!-- <section class="section" id="resume-download" data-aos="fade-up">
-        <h2>Download Resume</h2>
-        <div class="buttons">
-            <button id="downloadBtn">
-                <span id="spinner" style="display:none; margin-right: 10px;">
-                    <i class="fas fa-spinner fa-spin"></i>
-                </span>
-                Download PDF
-            </button>
-        </div>
-    </section> -->
+    <section class="section" id="experience" data-aos="fade-up">
+        <h2>PROJECTS</h2>
+        <h4>Android Trojan Identification using Machine Learning (4 Months)</h4>
+        <ul>
+            <li>Built and deployed a machine learning model to detect and classify Android Trojan malware.</li>
+            <li>Applied Random Forest, XGBoost, and Decision Tree algorithms to achieve high detection accuracy.</li>
+            <li>Used Python, Pandas, NumPy, Scikit-learn, Joblib, and RandomOverSampler for data preprocessing and
+                balancing.</li>
+            <li>Deployed the solution via Flask with an HTML interface, enabling real-time malware classification.</li>
+        </ul>
+        <br />
+        <h4>AWS Cloud Migration Project (6 Months)</h4>
+        <ul>
+            <li>Led a 6-member team to migrate company infrastructure to AWS Cloud, improving scalability, security, and
+                efficiency.</li>
+            <li>Implemented cost-optimization strategies and automated monitoring, reducing downtime by 30%.</li>
+            <li>Delivered the project on time and within budget using project management best practices.</li>
+        </ul>
+        <br />
+        <h4>Instagram Reach Prediction (Data Science Project)</h4>
+        <ul>
+            <li>Conducted EDA using Plotly and WordCloud to analyze engagement patterns.</li>
+            <li>Developed a model (Passive Aggressive Regressor) to predict post reach.</li>
+            <li>Helped creators identify strategies to improve engagement by 20%.</li>
+        </ul>
+    </section>
 
-    <!-- <section class="section" id="contact" data-aos="fade-up">
-        <h2>CONTACT</h2>
-        <p><i class="fas fa-envelope" style="color: #0fccce; margin-right: 8px;"></i><a target="_blank"
-                href="mailto:phanichandu063@gmail.com" style="color:#0fccce">phanichandu063@gmail.com</a></p>
-        <p><i class="fas fa-phone" style="color: #0fccce; margin-right: 8px;"></i><a href="tel:+919121856701"
-                style="color:#0fccce">+91 9121856701</a></p>
-        <p><i class="fas fa-map-marker-alt" style="color: #0fccce; margin-right: 8px;"></i>Eluru, India</p>
-    </section> -->
+    <section class="section skill-section" id="skills" data-aos="fade-up" style="text-align: start;">
+        <h2>CORE COMPETENCIES</h2>
+        <ul>
+            <li><strong>Programming:</strong> Python, C, SQL</li>
+            <li><strong>Databases:</strong> MySQL, DBMS</li>
+            <li><strong>Data Science:</strong> Scikit-learn, Pandas, NumPy, Plotly, WordCloud</li>
+            <li><strong>Cloud Computing:</strong> Amazon Web Services (AWS)</li>
+            <li><strong>Cybersecurity:</strong> Vulnerability Assessment, Incident Response, Ethical Hacking</li>
+            <li><strong>Web Development:</strong> HTML, CSS, Flask, Frontend Development</li>
+            <li><strong>Tools:</strong> Power BI, Joblib, MS Office, Jupyter Notebook</li>
+            <li><strong>Soft Skills:</strong> Leadership, Problem-Solving, Teamwork, Communication</li>
+        </ul>
+    </section>
 
-    <footer>
+    <section class="section" id="education" data-aos="fade-up">
+        <h2>EDUCATION</h2>
+        <p><strong>Master of Computer Applications (MCA)</strong><br><a target="_blank"
+                href="https://www.linkedin.com/school/sir-c.r.r.-college/">Sir C.R. Reddy College,
+                Eluru (Adikavi Nannaya University)</a> | 2023 - 2025 | Pursuing
+        </p>
+        <br />
+        <p><strong>B.Sc. in Computers</strong><br><a target="_blank"
+                href="https://www.linkedin.com/school/sir-c.r.r.-college/">Sir C.R. Reddy Degree College, Eluru
+                (Adikavi Nannaya University)</a> | 2021-2023 | CGPA: 7.55
+        </p>
+        <br />
+        <p><strong>Intermediate (MPC)</strong><br><a target="_blank" href="#">Sri Chaitanya Junior College, Eluru</a> |
+            2018-2020 | CGPA: 7.53
+        </p>
+        <br />
+        <p><strong>SSC</strong><br><a target="_blank" href="#">Sri Sai High School, Eluru</a> | 2018 | CGPA: 9.2
+        </p>
+    </section>
+
+    <br class="print-break" style="display: none;" />
+    <br class="print-break" style="display: none;" />
+
+    <section class="section" id="certifications" data-aos="fade-up">
+        <h2>CERTIFICATIONS & ACHIEVEMENTS</h2>
+        <ul>
+            <li>Python for Data Science - Infosys Springboard</li>
+            <li>Frontend Development - Infosys Springboard</li>
+            <li>HTML & CSS Course - Udemy</li>
+            <li>1st Prize in Group Discussion - Sir C.R. Reddy Degree College</li>
+        </ul>
+    </section>
+
+    <section class="section yes-print" id="declaration-section" data-aos="fade-up" style="display: none;">
+        <h2>Declaration</h2>
+        <p>
+            I hereby declare that the information provided above is true and accurate to the best of my knowledge and
+            belief.
+        </p></br>
+        <ul>
+            <li>
+                Place : Eluru
+            </li>
+
+            <li>
+                Date : <span id="currentDate"></span>
+            </li>
+        </ul></br>
+        <p style="text-align: right; font-weight: 200;">
+            Bathula Leela Phani Chandu
+        </p>
+    </section>
+
+    <footer class="no-print">
         &copy; 2025 Made by <a target="_blank" href="https://www.linkedin.com/in/bathula-leela-phani-chandu-788351276/"
-            style="font-weight: bold;" class="highlight">Leela Phani Chandu Bathula.</a>
+            style="font-weight: bold;" class="highlight">Bathula Leela Phani Chandu.</a>
     </footer>
 
-    <!-- Floating Buttons -->
-    <div>
+    <div id="floating-buttons-container" class="no-print">
         <a href="#" class="floating-button" title="Print Resume" style="right: 227px;" onclick="downloadPdf()">
             <i class="fas fa-print"></i>
         </a>
-
         <a href="tel:+919121856701" title="Contact Me" class="floating-button" style="right: 160px;">
             <i class="fas fa-phone"></i>
         </a>
@@ -505,20 +561,20 @@
             style="right: 94px;">
             <i class="fa-regular fa-envelope"></i>
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/bathula-leela-phani-chandu-788351276/" title="Connect with Me"
-            class="floating-button" style="right: 30px;">
+        <a target="_blank" href="https://www.linkedin.com/in/bathula-leela-phani-chandu-788351276/"
+            title="Connect with Me" class="floating-button" style="right: 30px;">
             <i class="fa-brands fa-linkedin"></i>
         </a>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        // const footer = document.querySelector('footer');
-        // footer.innerHTML = `&copy; ${new Date().getFullYear()} Made by <strong>Leela Phani Chandu Bathula.</strong>`;
-
         const greeting = document.getElementById('greeting');
         const overlay = document.getElementById('overlay');
         const hour = new Date().getHours();
+        const headerText = "BATHULA LEELA PHANI CHANDU";
+        const headerElement = document.querySelector('nav h1');
+
         if (hour < 12) {
             greeting.innerHTML = 'Good Morning! <br/> Welcome to my portfolio!';
         } else if (hour < 18) {
@@ -527,14 +583,13 @@
             greeting.innerHTML = 'Good Evening! <br/> Welcome to my portfolio!';
         }
 
-        // Fade out greeting and overlay after 3 seconds
         setTimeout(() => {
             greeting.style.opacity = '0';
             overlay.style.opacity = '0';
             setTimeout(() => {
                 greeting.style.display = 'none';
                 overlay.style.display = 'none';
-            }, 500); // Wait for the fade-out transition to complete
+            }, 500);
         }, 1000);
 
         AOS.init({ duration: 1000, once: true });
@@ -543,6 +598,7 @@
             window.scrollTo(0, 0);
         }
 
+        // Progress Bar
         window.addEventListener('scroll', () => {
             const scrollTop = window.scrollY;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -550,7 +606,6 @@
             document.querySelector('.progress-bar').style.width = scrollPercent + '%';
         });
 
-        // Adjust scroll position to account for fixed nav height
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -565,10 +620,7 @@
             });
         });
 
-        const headerText = "Leela Phani Chandu Bathula";
-        const headerElement = document.querySelector('nav h1');
         let index = 0;
-
         function typeEffect() {
             if (index < headerText.length) {
                 headerElement.textContent += headerText.charAt(index);
@@ -576,14 +628,13 @@
                 setTimeout(typeEffect, 100);
             }
         }
-
         headerElement.textContent = "";
         typeEffect();
 
         document.addEventListener('click', function (e) {
             const nav = document.getElementById('navLinks');
             const toggle = document.querySelector('.menu-toggle');
-            const isClickInside = nav.contains(e.target) || toggle.contains(e.target);
+            const isClickInside = nav.contains(e.Tearget) || toggle.contains(e.target);
             if (!isClickInside && nav.classList.contains('active')) {
                 nav.classList.remove('active');
                 toggle.classList.remove('open');
@@ -594,6 +645,7 @@
             document.getElementById('navLinks').classList.toggle('active');
         }
 
+        // --- Certification Popup 
         function openPopup(url) {
             const width = 700;
             const height = 400;
@@ -608,45 +660,30 @@
         }
 
         function downloadPdf() {
+            const originalTitle = document.title;
+            document.title = "Leela Phani Chandu - Resume";
+
+            window.addEventListener('afterprint', () => {
+                document.title = originalTitle;
+            }, { once: true });
             window.scrollTo(0, document.body.scrollHeight);
             setTimeout(() => {
                 window.print();
-            }, 500);
+            }, 1000);
         }
 
-        function animateCounter(id, target, duration = 1000) {
-            const el = document.getElementById(id);
-            let start = 0;
-            const increment = target / (duration / 30);
-            const counter = setInterval(() => {
-                start += increment;
-                if (start >= target) {
-                    el.textContent = target;
-                    clearInterval(counter);
-                } else {
-                    el.textContent = Math.ceil(start);
-                }
-            }, 30);
-        }
         window.addEventListener('DOMContentLoaded', () => {
-            animateCounter('counter-experience', 3.8);
-        });
+            const currentDate = new Date();
+            const dd = String(currentDate.getDate()).padStart(2, '0');
+            const mm = String(currentDate.getMonth() + 1).padStart(2, '0');
+            const yyyy = currentDate.getFullYear();
 
-        //Pdf Download
-        document.getElementById('downloadBtn').addEventListener('click', function () {
-            const spinner = document.getElementById('spinner');
-            spinner.style.display = 'inline-block';
-            const link = document.createElement('a');
-            link.href = 'Sai%20Nikhil%20Resume%202025.pdf';
-            link.download = 'Sai Nikhil Resume 2025.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            setTimeout(() => spinner.style.display = 'none', 1500);
+            const currentDateElement = document.getElementById('currentDate');
+            if (currentDateElement) {
+                currentDateElement.textContent = `${dd}-${mm}-${yyyy}`;
+            }
         });
-
     </script>
 </body>
 
 </html>
-
